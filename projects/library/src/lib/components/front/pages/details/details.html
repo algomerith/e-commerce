@@ -1,0 +1,54 @@
+ <main>
+            @if(offer){
+            <section class="categories-section">
+
+                <div class="categories-header">
+                    <!-- <div> -->
+                        <h2 class="categories-title">
+                            {{ offer.category | titlecase }}
+                        </h2>
+                    <!-- </div> -->
+                    <div class="back-btn-container">
+                        <a class="back-btn" (click)="goBack()" style="cursor: pointer;">← Retour</a>
+                    </div>
+                </div>
+
+
+                <div class="categories-grid">
+                    <!-- COLONNE GAUCHE -->
+                    <div class="offer-info">
+
+                        <h1>{{ offer.title }}</h1>
+
+                        <div class="prices">
+                            <span class="new-price">{{ offer.price }} €</span>
+                        </div>
+
+                        <p class="description">
+                            Cette offre est proposée par {{ offer.partner }}
+                            dans la catégorie {{ offer.category }}.
+                        </p>
+
+                        <a class="reserve-btn" [href]="affiliateLink" target="_blank" rel="noopener">
+                            Acheter
+                        </a>
+                        <!-- COLONNE GAUCHE FIN -->
+                    </div>
+
+                    <!-- COLONNE DROITE -->
+                    <aside class="store-info">
+                        <h3>🏪 Partenaire</h3>
+                        <p><strong>{{ offer.partner }}</strong></p>
+                        <p>Catégorie : {{ offer.category }}</p>
+                    </aside>
+                    <!-- COLONNE DROITE FIN -->
+                </div>
+            </section>
+            }
+            @else{
+            <ng-template>
+                <p>Offre introuvable.</p>
+                <a routerLink="/home">← Retour</a>
+            </ng-template>
+            }
+        </main>

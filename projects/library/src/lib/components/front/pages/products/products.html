@@ -1,0 +1,33 @@
+<main>
+    <section class="categories-section">
+
+        <!-- Header de la catégorie avec bouton Go Back -->
+        <div class="categories-header">
+            <!-- <div class="categories-title-container"> -->
+            <h2 class="category-title">
+                Les offres de la catégorie :
+                {{ currentCategory | titlecase }}
+            </h2>
+            <!-- </div> -->
+
+            <div class="back-btn-container">
+                <a class="back-btn" (click)="goBack()" style="cursor: pointer;">← Retour</a>
+            </div>
+        </div>
+
+        <div *ngFor="let partner of groupedOffers | keyvalue" class="categories-grid">
+
+            <h3 class="partner-title">🏪 {{ partner.key }}</h3>
+
+            <div class="offer-row" *ngFor="let offer of partner.value">
+                <span class="offer-title">{{ offer.title }}</span>
+                <span class="offer-price">{{ offer.price }} €</span>
+
+                <a class="offer-action" [routerLink]="['/offers', offer.category, offer.id]">
+                    Voir →
+                </a>
+            </div>
+        </div>
+
+    </section>
+</main>

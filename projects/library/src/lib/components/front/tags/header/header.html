@@ -1,0 +1,96 @@
+<!-- ============================================================
+     
+     ============================================================ -->
+
+@if(headerType === 'offline'){
+<header class="main-header">
+    <div class="header-container">
+
+        <!-- Logo -->
+        <div class="logo" routerLink="/home">
+            Prix<span>dassaut</span>
+        </div>
+
+        <!-- Navigation minimale -->
+        <nav class="nav">
+            <!-- <a routerLink="/" routerLinkActive="active">Accueil</a> -->
+            <lib-nav [navType]="'offline-header'"></lib-nav>
+
+        </nav>
+
+    </div>
+</header>
+}
+
+
+
+<!-- ============================================================
+     Header - offline
+     ============================================================ -->
+
+@if(headerType === 'offers-offline'){
+<header class="main-header">
+    <div class="header-container">
+
+        <!-- Logo -->
+        <div class="logo" routerLink="/home">
+            Prix<span>dassaut</span>
+        </div>
+
+        <!-- Navigation minimale -->
+        <nav class="nav">
+            <!-- <a routerLink="/" routerLinkActive="active">Accueil</a> -->
+            <lib-nav [navType]="'offline-header'"></lib-nav>
+
+        </nav>
+
+    </div>
+</header>
+}
+
+
+
+<!-- ============================================================
+     Header - login
+     ============================================================ -->
+
+@if(headerType === 'login'){
+<header class="main-header">
+    <div class="header-container">
+        <lib-nav [navType]="'login-header'"></lib-nav>
+    </div>
+</header>
+}
+
+
+
+<!-- ============================================================
+     Header - sign-up
+     ============================================================ -->
+
+@if(headerType === 'sign-up'){
+<header class="main-header">
+    <div class="header-container">
+        <lib-nav [navType]="'sign-up-header'"></lib-nav>
+    </div>
+</header>
+}
+
+
+
+<!-- ============================================================
+     Header - customer
+     ============================================================ -->
+
+@if(headerType === 'customer'){
+<header class="main-header">
+    <!-- Logo -->
+    <div class="logo" routerLink="/customer/home">
+        Prix<span>dassaut</span>
+    </div>
+
+    <div class="header-container">
+        <lib-nav [navType]="'customer-header'"></lib-nav>
+    </div>
+</header>
+}

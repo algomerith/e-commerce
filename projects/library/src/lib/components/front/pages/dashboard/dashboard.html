@@ -1,0 +1,212 @@
+<div class="admin-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="admin-sidebar">
+    <h2 class="logo">Prixdassaut</h2>
+
+    <nav class="menu">
+      <a class="active">📊 Dashboard</a>
+      <a>🏷️ Offres</a>
+      <a>🏬 Boutiques</a>
+      <a>🔗 Liens affiliés</a>
+      <a>👤 Utilisateurs</a>
+      <a>⚙️ Paramètres</a>
+    </nav>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="admin-content">
+
+    <!-- HEADER -->
+    <header class="admin-header">
+      <h1>Dashboard Admin</h1>
+      <div class="admin-user">
+        <span>Admin</span>
+        <img src="https://i.pravatar.cc/40" alt="admin">
+      </div>
+    </header>
+
+    <!-- STATS -->
+    <section class="stats">
+      <div class="stat-card">
+        <h3>Liens Textuels</h3>
+        <p>256</p>
+      </div>
+      <div class="stat-card">
+        <h3>Liens Profonds</h3>
+        <p>182</p>
+      </div>
+      <div class="stat-card">
+        <h3>Bannières</h3>
+        <p>54</p>
+      </div>
+      <div class="stat-card">
+        <h3>Coupons Actifs</h3>
+        <p>28</p>
+      </div>
+      <div class="stat-card">
+        <h3>Flux Produits</h3>
+        <p>1 245</p>
+      </div>
+      <div class="stat-card">
+        <h3>Clics Totaux</h3>
+        <p>12 540</p>
+      </div>
+      <div class="stat-card">
+        <h3>Conversions</h3>
+        <p>3 210</p>
+      </div>
+      <div class="stat-card">
+        <h3>Revenus (€)</h3>
+        <p>1 980</p>
+      </div>
+    </section>
+
+    <!-- TABLE : Méthodes promotionnelles -->
+    <section class="admin-table">
+      <h2>Méthodes Promotionnelles</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Méthode</th>
+            <th>Statut</th>
+            <th>Clics</th>
+            <th>Conversions</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Liens Textuels</td>
+            <td class="status active">Actif</td>
+            <td>6 200</td>
+            <td>1 150</td>
+            <td>
+              <button>Voir</button>
+              <button>Désactiver</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Liens Profonds</td>
+            <td class="status active">Actif</td>
+            <td>3 450</td>
+            <td>980</td>
+            <td>
+              <button>Voir</button>
+              <button>Désactiver</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Flux Produits</td>
+            <td class="status active">Actif</td>
+            <td>5 600</td>
+            <td>1 780</td>
+            <td>
+              <button>Voir</button>
+              <button>Actualiser</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Bannières</td>
+            <td class="status active">Actif</td>
+            <td>1 200</td>
+            <td>350</td>
+            <td>
+              <button>Voir</button>
+              <button>Désactiver</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Coupons</td>
+            <td class="status active">Actif</td>
+            <td>800</td>
+            <td>420</td>
+            <td>
+              <button>Voir</button>
+              <button>Désactiver</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Réseaux Sociaux</td>
+            <td class="status active">Actif</td>
+            <td>2 400</td>
+            <td>680</td>
+            <td>
+              <button>Voir</button>
+              <button>Partager</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Extension MyAwin</td>
+            <td class="status active">Actif</td>
+            <td>1 000</td>
+            <td>310</td>
+            <td>
+              <button>Voir</button>
+              <button>Installer</button>
+            </td>
+          </tr>
+          <tr>
+            <td>API Awin</td>
+            <td class="status active">Connectée</td>
+            <td>—</td>
+            <td>—</td>
+            <td>
+              <button>Tester</button>
+              <button>Synchroniser</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ALERTES -->
+    <section class="admin-table">
+      <h2>Alertes & Actions</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Alerte</th>
+            <th>Méthode</th>
+            <th>Urgence</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Coupon expirant bientôt</td>
+            <td>Coupons</td>
+            <td class="status inactive">Haute</td>
+            <td><button>Mettre en avant</button></td>
+          </tr>
+          <tr>
+            <td>Flux produit non mis à jour</td>
+            <td>Flux Produits</td>
+            <td class="status inactive">Moyenne</td>
+            <td><button>Actualiser</button></td>
+          </tr>
+          <tr>
+            <td>Lien cassé</td>
+            <td>Liens Profonds</td>
+            <td class="status inactive">Haute</td>
+            <td><button>Corriger</button></td>
+          </tr>
+          <tr>
+            <td>Baisse conversion</td>
+            <td>Liens Textuels</td>
+            <td class="status inactive">Moyenne</td>
+            <td><button>Optimiser</button></td>
+          </tr>
+          <tr>
+            <td>API indisponible</td>
+            <td>API Awin</td>
+            <td class="status inactive">Haute</td>
+            <td><button>Reconnecter</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+</div>

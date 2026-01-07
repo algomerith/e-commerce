@@ -1,0 +1,15 @@
+<main>
+    <section class="categories-section">
+        
+        <div class="categories-header">
+            <h2>Les catégories de produits</h2>
+        </div>
+
+        <ul class="categories-grid">
+            <li class="category-card" *ngFor="let category of categories" [routerLink]="['/product']"[queryParams]="{ category: category.id }">
+                <div class="icon">{{ category.icon }}</div>
+                <span>{{ category.label }}</span>
+            </li>
+        </ul>
+    </section>
+</main>

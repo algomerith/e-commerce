@@ -1,0 +1,24 @@
+@if (footerType === 'offline') {
+<footer class="footer">
+  <div class="footer-content">
+    <!-- Copyright -->
+    <div class="footer-copy">
+      <p>© 2025 PrixDassaut – Tous droits réservés</p>
+    </div>
+    <!-- Navigation légale -->
+    <lib-nav [navType]="'offline-footer'"></lib-nav>
+  </div>
+</footer>
+
+} @if (footerType === 'customer') {
+<footer class="footer">
+  <div class="footer-content">
+    <!-- Copyright -->
+    <div class="footer-copy">
+      <p>© 2025 PrixDassaut – Tous droits réservés</p>
+    </div>
+    <!-- Navigation légale -->
+    <lib-nav [navType]="'customer-footer'"></lib-nav>
+  </div>
+</footer>
+}

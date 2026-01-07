@@ -1,0 +1,99 @@
+<!-- ============================================================
+     offline-Header
+     ============================================================ -->
+
+@if(navType === 'offline-header'){
+<nav class="nav">
+    <div>
+        <ul>
+            <li><a routerLink="/home" routerLinkActive="active">Accueil</a></li>
+        </ul>
+    </div>
+</nav>
+}
+
+
+
+<!-- ============================================================
+     login
+     ============================================================ -->
+
+@if(navType === 'login-header'){
+<nav class="nav">
+    <div>
+        <ul>
+            <li><a routerLink="/home">Accueil</a></li>
+            <li><a routerLink="/sign-up">Inscription</a></li>
+        </ul>
+    </div>
+</nav>
+}
+
+
+<!-- ============================================================
+     sign-up
+     ============================================================ -->
+
+@if(navType === 'sign-up-header'){
+<nav class="nav">
+    <div>
+        <ul>
+            <li><a routerLink="/home">Accueil</a></li>
+            <li><a routerLink="/login">Connexion</a></li>
+        </ul>
+    </div>
+</nav>
+}
+
+
+
+<!-- ============================================================
+     customer-header
+     ============================================================ -->
+
+@if(navType === 'customer-header'){
+<nav class="nav">
+    <div>
+        <ul>
+            <li><a routerLink="/customer/home">Accueil</a></li>
+        </ul>
+    </div>
+</nav>
+}
+
+
+<!-- ============================================================
+     offline-Footer
+     ============================================================ -->
+
+@if(navType === 'offline-footer'){
+<nav class="footer">
+    <div>
+        <ul>
+            <li> <a routerLink="/legals/notices">Mentions légales</a></li>
+            <li> <a routerLink="/legals/cgu">CGU</a></li>
+            <li><a routerLink="/legals/cgv">CGV</a></li>
+            <li><a routerLink="/legals/privacy">Confidentialité</a></li>
+            <li><a routerLink="/legals/cookies">Cookies</a></li>
+        </ul>
+    </div>
+</nav>
+}
+
+<!-- ============================================================
+     customer-Footer
+     ============================================================ -->
+
+<!-- @if(navType === 'customer-footer'){
+<nav class="footer">
+    <div>
+        <ul>
+            <li> <a routerLink="/legal/notices">Mentions légales</a></li>
+            <li> <a routerLink="/legal/cgu">CGU</a></li>
+            <li><a routerLink="/legal/cgv">CGV</a></li>
+            <li><a routerLink="/legal/privacy">Confidentialité</a></li>
+            <li><a routerLink="/legal/cookies">Cookies</a></li>
+        </ul>
+    </div>
+</nav>
+} -->

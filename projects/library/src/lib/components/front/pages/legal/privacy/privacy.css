@@ -1,0 +1,69 @@
+/* Page légale */
+.legal-container {
+  background: #f7f7f7;
+  padding: 80px 24px;
+}
+
+/* Conteneur central */
+.legal-section {
+  max-width: 1200px;
+  margin: auto;
+  text-align: left;
+}
+
+/* Titre principal */
+.legal-section h1 {
+  font-size: 36px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+/* Carte de contenu (comme category-card) */
+.legal-card {
+  background: #fff;
+  /* border-radius: 20px; */
+  padding: 32px;
+  margin-bottom: 24px;
+  /* box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08); */
+}
+
+/* Titres des sections */
+.legal-card h2 {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+/* Texte */
+.legal-card p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+  margin: 0;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .legal-page {
+    padding: 48px 16px;
+  }
+
+  .legal-section h1 {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  .legal-card {
+    padding: 24px 20px;
+  }
+
+  .legal-card h2 {
+    font-size: 20px;
+  }
+
+  .legal-card p {
+    font-size: 15px;
+  }
+}
