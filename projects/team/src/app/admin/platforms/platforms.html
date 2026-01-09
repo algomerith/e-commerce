@@ -1,1 +1,47 @@
-<p>platforms works!</p>
+<lib-head></lib-head>
+
+<body>
+    <div class="page">
+
+        <div class="header">
+            <div>
+                <h1>🔁 Plateformes</h1>
+                <p>Sources de données & plateformes d’affiliation</p>
+            </div>
+
+            <button class="back-btn" (click)="goBack()">← Retour</button>
+        </div>
+
+        <section class="grid">
+            <div class="card table-card">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Type</th>
+                            <th>Statut</th>
+                            <th>Dernière synchro</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Awin</td>
+                            <td>Affiliation</td>
+                            <td><span class="badge success">Active</span></td>
+                            <td>03/01/2026</td>
+                        </tr>
+
+                        <tr>
+                            <td>Import CSV</td>
+                            <td>Manuel</td>
+                            <td><span class="badge muted">Inactive</span></td>
+                            <td>—</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </div>
+</body>

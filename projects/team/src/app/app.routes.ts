@@ -11,6 +11,9 @@ import { Create } from './admin/create/create';
 import { Products } from './admin/products/products';
 import { AffiliateLinks } from './admin/affiliate-links/affiliate-links';
 import { Details } from './admin/details/details';
+import { Platforms } from './admin/platforms/platforms';
+import { Transactions } from './admin/transactions/transactions';
+import { Alerts } from './admin/alerts/alerts';
 
 export const routes: Routes = [
 
@@ -103,6 +106,26 @@ export const routes: Routes = [
       { path: '', component: AffiliateLinks }
     ]
   },
+  {
+    path: 'admin/database/platforms', component: Layout, data: { layoutType: 'admin' },
+    children: [
+      { path: '', component: Platforms }
+    ]
+  },
+  {
+    path: 'admin/database/transactions', component: Layout, data: { layoutType: 'admin' },
+    children: [
+      { path: '', component: Transactions }
+    ]
+  },
+  {
+    path: 'admin/database/alerts', component: Layout, data: { layoutType: 'admin' },
+    children: [
+      { path: '', component: Alerts }
+    ]
+  },
+
+
 
 
 

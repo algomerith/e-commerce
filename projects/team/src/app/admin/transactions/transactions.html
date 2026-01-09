@@ -1,1 +1,53 @@
-<p>transactions works!</p>
+<lib-head></lib-head>
+
+<body>
+  <div class="page">
+
+    <div class="header">
+      <div>
+        <h1>💰 Transactions</h1>
+        <p>Commissions et ventes générées</p>
+      </div>
+
+      <button class="back-btn" (click)="goBack()">← Retour</button>
+    </div>
+
+    <section class="grid">
+        <div class="card table-card">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Produit</th>
+            <th>Plateforme</th>
+            <th>Montant</th>
+            <th>Statut</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>#TX_98121</td>
+            <td>Nike Air Max 90</td>
+            <td>Awin</td>
+            <td>+4,32 €</td>
+            <td><span class="badge success">Validée</span></td>
+            <td>01/01/2026</td>
+          </tr>
+
+          <tr>
+            <td>#TX_98145</td>
+            <td>Adidas Ultraboost</td>
+            <td>Awin</td>
+            <td>+0,00 €</td>
+            <td><span class="badge muted">Annulée</span></td>
+            <td>29/12/2025</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    </section>
+
+  </div>
+</body>
