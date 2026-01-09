@@ -1,0 +1,64 @@
+<lib-head></lib-head>
+
+<div class="page">
+
+    <div class="header">
+        <div>
+            <h1>➕ Nouvel utilisateur</h1>
+            <p>Création d’un compte utilisateur</p>
+        </div>
+
+        <button class="back-btn" (click)="goBack()">
+            ← Retour
+        </button>
+    </div>
+
+    <div class="card form-card">
+        <form (ngSubmit)="createUser()">
+
+            <div class="form-group">
+                <label>Nom</label>
+                <input type="text" placeholder="Doe" />
+            </div>
+
+            <div class="form-group">
+                <label>Prénom</label>
+                <input type="text" placeholder="John" />
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="john.doe@prixdassaut.com" />
+            </div>
+
+            <div class="form-group">
+                <label>Rôle</label>
+                <select>
+                    <option value="Admin">Admin</option>
+                    <option value="Manager">Manager</option>
+                    <option value="Viewer">Viewer</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Statut</label>
+                <select>
+                    <option value="Actif">Actif</option>
+                    <option value="Suspendu">Suspendu</option>
+                </select>
+            </div>
+
+            <div class="actions">
+                <button type="submit" class="btn primary">
+                    Créer l’utilisateur
+                </button>
+
+                <button type="button" class="btn secondary" (click)="goBack()">
+                    Annuler
+                </button>
+            </div>
+
+        </form>
+    </div>
+
+</div>

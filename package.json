@@ -36,7 +36,7 @@
     "@auth0/angular-jwt": "^5.2.0",
     "@ngrx/store": "^21.0.1",
     "@softarc/native-federation-node": "^3.3.4",
-    "@stripe/stripe-js": "^8.6.0",
+    "@stripe/stripe-js": "^8.6.1",
     "crypto-js": "^4.2.0",
     "es-module-shims": "^1.5.12",
     "i": "^0.3.7",

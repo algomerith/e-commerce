@@ -1,0 +1,75 @@
+<lib-head></lib-head>
+
+<body>
+    <div class="page">
+
+        <!-- Header -->
+        <div class="header">
+            <div>
+                <h1>📦 Produits</h1>
+                <p>Données produits importées depuis les plateformes</p>
+            </div>
+
+            <button class="back-btn" (click)="goBack()">
+                ← Retour
+            </button>
+        </div>
+
+        <!-- Filters -->
+        <div class="filters">
+            <input type="text" placeholder="Rechercher un produit..." />
+
+            <select>
+                <option value="">Toutes les plateformes</option>
+                <option value="awin">Awin</option>
+            </select>
+
+            <select>
+                <option value="">Tous les statuts</option>
+                <option value="active">Actif</option>
+                <option value="inactive">Inactif</option>
+            </select>
+        </div>
+
+        <!-- Table -->
+        <div class="card table-card">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produit</th>
+                        <th>ID</th>
+                        <th>Annonceur</th>
+                        <th>Plateforme</th>
+                        <th>Prix</th>
+                        <th>Statut</th>
+                        <th>Dernière MAJ</th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr *ngFor="let product of products">
+                        <td>{{ product.name }}</td>
+                        <td>#{{ product.id }}</td>
+                        <td>{{ product.advertiser }}</td>
+                        <td>{{ product.platform }}</td>
+                        <td>{{ product.price }} €</td>
+                        <td>
+                            <span class="badge" [ngClass]="product.status === 'Actif' ? 'success' : 'muted'">
+                                {{ product.status }}
+                            </span>
+                        </td>
+                        <td>{{ product.updatedAt }}</td>
+                        <td>
+                            <button class="btn small" [routerLink]="['/admin/database/products', product.id]">
+                                Voir
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+
+    </div>
+</body>

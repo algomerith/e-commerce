@@ -113,7 +113,11 @@
 			"architect": {
 				"build": {
 					"builder": "@angular-architects/native-federation:build",
-					"options": {},
+          "options": {
+            "styles": [
+              "projects/team/src/material-theme.scss"
+            ]
+          },
 					"configurations": {
 						"production": {
 							"target": "team:esbuild:production"
@@ -206,7 +210,11 @@
 			"architect": {
 				"build": {
 					"builder": "@angular-architects/native-federation:build",
-					"options": {},
+          "options": {
+            "styles": [
+              "projects/partner/src/material-theme.scss"
+            ]
+          },
 					"configurations": {
 						"production": {
 							"target": "partner:esbuild:production"

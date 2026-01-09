@@ -1,0 +1,69 @@
+.page {
+    padding: 2rem;
+    background: #f6f7fb;
+    min-height: 100%;
+}
+
+/* Header */
+.header {
+    margin-bottom: 2rem;
+}
+
+.header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.25rem;
+}
+
+.header p {
+    color: #6b7280;
+    font-size: 0.95rem;
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Card */
+.card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid #e5e7eb;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Icon */
+.card .icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+/* Text */
+.card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+/* Disabled card */
+.card.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}

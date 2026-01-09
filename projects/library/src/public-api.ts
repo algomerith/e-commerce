@@ -28,5 +28,11 @@ export { Cookies } from './lib/components/front/pages/legal/cookies/cookies';
 export { Notices } from './lib/components/front/pages/legal/notices/notices';
 export { Privacy } from './lib/components/front/pages/legal/privacy/privacy';
 
-export { Dashboard } from './lib/components/front/pages/dashboard/dashboard';
+export { SignIn } from './lib/components/front/pages/sign-in/sign-in';
+export { SignUp } from './lib/components/front/pages/sign-up/sign-up';
+export { NotFound } from './lib/components/front/pages/not-found/not-found';
+
+export { Layout } from './lib/components/front/layout/layout';
+
+
 

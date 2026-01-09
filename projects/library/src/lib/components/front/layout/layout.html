@@ -1,0 +1,95 @@
+<!-- ============================================================
+     Admin Layout
+     ============================================================ -->
+
+@if(layoutType === 'admin'){
+<div class="layout">
+    <aside class="sidebar" [class.open]="isSidebarOpen">
+        <h2 class="logo">Prixdassaut</h2>
+
+        <nav>
+            <a routerLink="/admin/dashboard" (click)="closeSidebar()">📊 Dashboard</a>
+            <!-- <a routerLink="/admin/advertisers" (click)="closeSidebar()">🏬 Annonceurs</a>
+            <a routerLink="/admin/transactions" (click)="closeSidebar()">💰 Transactions</a>
+            <a routerLink="/admin/affiliate-links" (click)="closeSidebar()">🔗 Liens</a>
+            <a routerLink="/admin/platforms" (click)="closeSidebar()">🔁 Plateformes</a>
+            <a routerLink="/admin/alerts" (click)="closeSidebar()">🔔 Alertes</a>
+            <a routerLink="/admin/exports" (click)="closeSidebar()">📤 Exports</a> -->
+            <a routerLink="/admin/database" (click)="closeSidebar()">🗄️ Database</a>
+            <a routerLink="/admin/settings" (click)="closeSidebar()">⚙️ Paramètres</a>
+        </nav>
+    </aside>
+
+    <div class="content">
+        <header class="header">
+            <button class="sidebar-toggle" (click)="toggleSidebar()" aria-label="Toggle menu">
+                ☰
+            </button>
+
+            <span>Admin</span>
+            <button>Déconnexion</button>
+        </header>
+        <main (click)="closeSidebar()">
+            <router-outlet></router-outlet>
+        </main>
+    </div>
+</div>
+
+}
+
+
+<!-- ============================================================
+     Sign-in or Sign-up Layout
+     ============================================================ -->
+
+@if(layoutType === 'sign-in'){
+<div class="layout">
+    <div class="content">
+
+        <header class="header">
+            <button>Inscription</button>
+        </header>
+
+        <main (click)="closeSidebar()">
+            <router-outlet></router-outlet>
+        </main>
+    </div>
+</div>
+
+}
+
+<!-- ============================================================
+     Sign-up Layout
+     ============================================================ -->
+
+@if(layoutType === 'sign-up'){
+<div class="layout">
+    <div class="content">
+
+        <header class="header">
+            <button>Connexion</button>
+        </header>
+
+        <main (click)="closeSidebar()">
+            <router-outlet></router-outlet>
+        </main>
+    </div>
+</div>
+
+}
+
+<!-- ============================================================
+     Not-found Layout
+     ============================================================ -->
+
+@if(layoutType === 'not-found'){
+<div class="layout">
+    <div class="content">
+
+        <main (click)="closeSidebar()">
+            <router-outlet></router-outlet>
+        </main>
+    </div>
+</div>
+
+}

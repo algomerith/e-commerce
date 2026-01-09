@@ -24,7 +24,7 @@ export class App {
 
   setTitleFromUrl(url: string) {
     const clean = url.startsWith('/') ? url.slice(1) : url;
-    const path = clean === '' ? 'home' : clean;
+    const path = clean === '' ? 'login' : clean;
     const title = `${this.title()} / ${path}`;
     this.titleService.setTitle(title);
   }

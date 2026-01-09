@@ -1,0 +1,133 @@
+/* ============================================================
+   AUTH LAYOUT
+   ============================================================ */
+
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1e1e2f, #2e2e48);
+    padding: 1rem;
+}
+
+/* ============================================================
+   CARD
+   ============================================================ */
+
+.auth-card {
+    width: 100%;
+    max-width: 420px;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* ============================================================
+   TITLES
+   ============================================================ */
+
+.auth-title {
+    font-size: 1.8rem;
+    margin-bottom: 0.25rem;
+    color: #1e1e2f;
+}
+
+.auth-subtitle {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 1.75rem;
+}
+
+/* ============================================================
+   FORM
+   ============================================================ */
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 0.85rem;
+    margin-bottom: 0.35rem;
+    color: #333;
+}
+
+.form-group input {
+    padding: 0.7rem 0.75rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 0.95rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #1e1e2f;
+    box-shadow: 0 0 0 2px rgba(30, 30, 47, 0.15);
+}
+
+/* ============================================================
+   BUTTON
+   ============================================================ */
+
+.btn-primary {
+    margin-top: 0.5rem;
+    padding: 0.75rem;
+    border-radius: 6px;
+    border: none;
+    background: #1e1e2f;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.btn-primary:hover {
+    background: #2e2e48;
+}
+
+.btn-primary:active {
+    transform: scale(0.98);
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+
+.auth-footer {
+    margin-top: 1.25rem;
+    text-align: center;
+}
+
+.auth-footer a {
+    font-size: 0.85rem;
+    color: #1e1e2f;
+    text-decoration: none;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 480px) {
+    .auth-card {
+        padding: 1.5rem;
+    }
+
+    .auth-title {
+        font-size: 1.5rem;
+    }
+}

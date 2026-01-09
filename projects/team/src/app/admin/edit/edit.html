@@ -1,0 +1,57 @@
+<lib-head></lib-head>
+
+<div class="page">
+    <div class="header">
+        <div>
+            <h1>✏️ Modifier l'utilisateur</h1>
+        </div>
+        <button class="back-btn" (click)="cancel()">← Retour</button>
+    </div>
+
+    <div class="card form-card">
+        <form [formGroup]="userForm" (ngSubmit)="save()">
+
+            <div class="row">
+                <label>Nom</label>
+                <input type="text" formControlName="lastName" />
+            </div>
+
+            <div class="row">
+                <label>Prénom</label>
+                <input type="text" formControlName="firstName" />
+            </div>
+
+            <div class="row">
+                <label>Email</label>
+                <input type="email" formControlName="email" />
+            </div>
+
+            <div class="row">
+                <label>Téléphone</label>
+                <input type="text" formControlName="phone" />
+            </div>
+
+            <div class="row">
+                <label>Rôle</label>
+                <select formControlName="role">
+                    <option>Admin</option>
+                    <option>Manager</option>
+                    <option>Viewer</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <label>Statut</label>
+                <select formControlName="status">
+                    <option>Actif</option>
+                    <option>Suspendu</option>
+                </select>
+            </div>
+
+            <div class="actions">
+                <button type="submit" class="btn primary">Enregistrer</button>
+                <button type="button" class="btn secondary" (click)="cancel()">Annuler</button>
+            </div>
+        </form>
+    </div>
+</div>

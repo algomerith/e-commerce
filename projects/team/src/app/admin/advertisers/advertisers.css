@@ -1,0 +1,114 @@
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.header h1 {
+  font-size: 1.6rem;
+  margin-bottom: 0.3rem;
+}
+
+.header p {
+  color: #666;
+}
+
+/* Back button */
+.back-btn {
+  background: none;
+  border: none;
+  color: #555;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.back-btn:hover {
+  text-decoration: underline;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.filters input,
+.filters select {
+  padding: 0.5rem 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 0.85rem;
+}
+
+/* Card */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.2rem;
+}
+
+.table-card {
+  overflow-x: auto;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #777;
+  padding-bottom: 0.6rem;
+}
+
+td {
+  padding: 0.75rem 0;
+  border-top: 1px solid #eee;
+  font-size: 0.9rem;
+}
+
+/* Badges */
+.badge {
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.badge.success {
+  background: #e6f7ec;
+  color: #1a7f37;
+}
+
+.badge.muted {
+  background: #f1f1f1;
+  color: #666;
+}
+
+/* Buttons */
+.btn.small {
+  padding: 0.35rem 0.7rem;
+  font-size: 0.75rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: #1e1e2f;
+  color: #fff;
+}
+
+.btn.small:hover {
+  background: #111827;
+}

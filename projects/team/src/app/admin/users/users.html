@@ -1,0 +1,70 @@
+<lib-head></lib-head>
+
+<body>
+
+    <div class="page">
+
+        <div class="header">
+            <div>
+                <h1>👥 Utilisateurs</h1>
+                <p>Gestion des comptes et rôles</p>
+            </div>
+
+            <div class="header-actions">
+                <button class="create-btn" [routerLink]="['/admin/database/users/create']">
+                    ➕ Nouvel utilisateur
+                </button>
+
+                <button class="back-btn" (click)="goBack()">
+                    ← Retour
+                </button>
+            </div>
+        </div>
+
+
+        <section class="grid">
+            <div class="card table-card">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Email</th>
+                            <th>Rôle</th>
+                            <th>Statut</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr *ngFor="let user of users">
+                            <td>{{ user.name }}</td>
+                            <td>{{ user.email }}</td>
+                            <td>
+                                <span class="badge" [ngClass]="user.role.toLowerCase()">
+                                    {{ user.role }}
+                                </span>
+                            </td>
+                            <td>
+                                <span class="badge" [ngClass]="user.status === 'Actif' ? 'success' : 'muted'">
+                                    {{ user.status }}
+                                </span>
+                            </td>
+                            <td class="actions">
+                                <button class="btn small primary"
+                                    [routerLink]="['/admin/database/users', user.id, 'edit']">
+                                    Modifier
+                                </button>
+
+                                <button class="btn small danger" (click)="deleteUser(user.id)">
+                                    Supprimer
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </section>
+    </div>
+
+</body>

@@ -1,0 +1,98 @@
+.page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
+    margin: auto;
+}
+
+.header h1 {
+    font-size: 1.6rem;
+    margin-bottom: 1.8rem;
+}
+
+
+/* Back button */
+.back-btn {
+    background: none;
+    border: none;
+    color: #555;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    max-height: 40px;
+}
+
+.back-btn:hover {
+    text-decoration: underline;
+}
+
+
+.card {
+    margin: auto;
+}
+
+.card.form-card {
+    background: #fff;
+    padding: 1.2rem;
+    border-radius: 8px;
+    /* box-shadow: 0 2px 6px rgba(0,0,0,.05); */
+    max-width: 500px;
+    /* border: 1px solid red; */
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.row label {
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.row input,
+.row select {
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.btn.primary {
+    background: #1e40af;
+    color: #fff;
+}
+
+.btn.secondary {
+    background: #f3f4f6;
+    color: #1e1e2f;
+}
+
+.btn.primary:hover {
+    background: #1e3a8a;
+}
+
+.btn.secondary:hover {
+    background: #e5e7eb;
+}
+
+.back-btn {
+    background: none;
+    border: none;
+    color: #1e40af;
+    cursor: pointer;
+    font-size: 0.9rem;
+}

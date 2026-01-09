@@ -1,12 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { Head, Layout } from 'library';
 
 @Component({
-  selector: 'lib-dashboard',
+  selector: 'app-dashboard',
   imports: [
     RouterModule,
-    CommonModule
+    CommonModule,
+    Head
   ],
   templateUrl: './dashboard.html',
   styleUrl: './dashboard.css',
