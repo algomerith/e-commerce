@@ -10,7 +10,7 @@ import { SignIn } from 'library';
   imports: [
     RouterModule,
     CommonModule,
-    Layout,
+    // Layout,
     // SignIn,
     Head
   ],

@@ -1,14 +1,75 @@
-<html>
+<!-- <html>
 <lib-head></lib-head>
 
 <body>
-        <!-- <lib-header [headerType]="'team'"></lib-header> -->
 
         <lib-layout>
             <router-outlet></router-outlet>
         </lib-layout>
 
-        <!-- <lib-footer [footerType]="'team'"></lib-footer> -->
 </body>
 
-</html>
+</html> -->
+
+<lib-head></lib-head>
+
+<body>
+
+  <div class="login-page">
+
+    <div class="login-card">
+
+      <!-- Logo / Title -->
+      <div class="login-header">
+        <h1>Prixdassaut</h1>
+        <p>Espace équipe</p>
+      </div>
+
+      <!-- Form -->
+      <form class="login-form">
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="admin@prixdassaut.com"
+            required
+          />
+        </div>
+
+        <div class="field">
+          <label for="password">Mot de passe</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="••••••••"
+            required
+          />
+        </div>
+
+        <div class="options">
+          <label class="remember">
+            <input type="checkbox" />
+            Se souvenir de moi
+          </label>
+
+          <a href="#" class="forgot">Mot de passe oublié ?</a>
+        </div>
+
+        <button type="submit" class="btn primary">
+          Se connecter
+        </button>
+
+      </form>
+
+      <!-- Footer -->
+      <div class="login-footer">
+        <p>Accès réservé à l’équipe Prixdassaut</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>

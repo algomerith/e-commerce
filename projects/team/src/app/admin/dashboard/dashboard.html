@@ -1,33 +1,151 @@
+<!-- ============================================================
+        Rôle fondamental du Dashboard
+        Le dashboard répond à UNE question : « Est-ce que mon application va bien ? »
+        Donc :
+        - Pas de CRUD
+        - Pas de configuration
+        - Pas de données brutes
+    ================================================================= -->
 <html>
 <lib-head></lib-head>
 
 <body>
 
-    <!-- <lib-layout>
-        <router-outlet></router-outlet>
-    </lib-layout> -->
+    <div class="page">
 
-    <div>
-        <h1>Dashboard</h1>
-
-        <div class="stats">
-            <div class="card">
-                <h3>Annonceurs</h3>
-                <p>124</p>
-            </div>
-
-            <div class="card">
-                <h3>Transactions aujourd’hui</h3>
-                <p>38</p>
-            </div>
-
-            <div class="card">
-                <h3>Commission du mois</h3>
-                <p>1 284 €</p>
+        <!-- Header -->
+        <div class="header">
+            <div>
+                <h1>📊 Dashboard</h1>
+                <p>Vue d’ensemble de la plateforme Prixdassaut</p>
             </div>
         </div>
-    </div>
 
+        <!-- KPI -->
+        <section class="kpi-grid">
+            <div class="kpi-card">
+                <span class="icon">💰</span>
+                <div>
+                    <h3>Revenus du mois</h3>
+                    <p class="value">1 284 €</p>
+                </div>
+            </div>
+
+            <div class="kpi-card">
+                <span class="icon">📦</span>
+                <div>
+                    <h3>Produits actifs</h3>
+                    <p class="value">1 248</p>
+                </div>
+            </div>
+
+            <div class="kpi-card">
+                <span class="icon">🏬</span>
+                <div>
+                    <h3>Annonceurs</h3>
+                    <p class="value">86</p>
+                </div>
+            </div>
+
+            <div class="kpi-card">
+                <span class="icon">🔁</span>
+                <div>
+                    <h3>Plateformes</h3>
+                    <p class="value">1 active</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main grid -->
+        <section class="dashboard-grid">
+
+            <!-- Performance -->
+            <div class="card">
+                <h2>📈 Performance affiliation</h2>
+
+                <div class="stats">
+                    <div>
+                        <span class="label">Clics</span>
+                        <span class="stat">3 482</span>
+                    </div>
+
+                    <div>
+                        <span class="label">Conversions</span>
+                        <span class="stat">138</span>
+                    </div>
+
+                    <div>
+                        <span class="label">Taux</span>
+                        <span class="stat">3.9 %</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alertes -->
+            <div class="card alerts">
+                <h2>🚨 Alertes</h2>
+
+                <ul>
+                    <li class="danger">Flux Awin : 2 produits en erreur</li>
+                    <li class="warning">Baisse de conversion (−18 %)</li>
+                    <li class="success">Import produits terminé</li>
+                </ul>
+
+                <a routerLink="/admin/database/alerts" class="link">
+                    Voir toutes les alertes →
+                </a>
+            </div>
+
+            <!-- Transactions -->
+            <div class="card table-card">
+                <h2>💰 Dernières transactions</h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Produit</th>
+                            <th>Montant</th>
+                            <th>Plateforme</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Nike Air Max</td>
+                            <td>+12 €</td>
+                            <td>Awin</td>
+                        </tr>
+
+                        <tr>
+                            <td>Adidas Ultraboost</td>
+                            <td>+9 €</td>
+                            <td>Awin</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <a routerLink="/admin/database/transactions" class="link">
+                    Voir toutes les transactions →
+                </a>
+            </div>
+
+            <!-- Plateformes -->
+            <div class="card">
+                <h2>🔁 État des plateformes</h2>
+
+                <ul class="platforms">
+                    <li><span class="dot success"></span> Awin — OK</li>
+                    <li><span class="dot muted"></span> Autres — Inactives</li>
+                </ul>
+
+                <a routerLink="/admin/database/platforms" class="link">
+                    Gérer les plateformes →
+                </a>
+            </div>
+
+        </section>
+
+    </div>
 </body>
 
 </html>

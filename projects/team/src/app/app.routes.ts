@@ -14,6 +14,7 @@ import { Details } from './admin/details/details';
 import { Platforms } from './admin/platforms/platforms';
 import { Transactions } from './admin/transactions/transactions';
 import { Alerts } from './admin/alerts/alerts';
+import { Login } from './login/login';
 
 export const routes: Routes = [
 
@@ -27,12 +28,11 @@ export const routes: Routes = [
   // login
   {
     path: 'login',
-    component: Layout,
-    data: { layoutType: 'sign-in' },
+    component: Layout, data: { layoutType: 'sign-in' },
     children: [
       {
         path: '',
-        component: SignIn
+        component: Login
       }
     ]
   },
